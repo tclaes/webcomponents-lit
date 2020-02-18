@@ -1,3 +1,3 @@
 # webcomponents-lit
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/webcomponents-lit)
+## Playing around with webcomponents created with lit-html & lit-element
