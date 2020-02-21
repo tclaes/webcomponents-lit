@@ -1,5 +1,6 @@
 import { LitElement, customElement, html, css, property } from 'lit-element';
 import './navbar-logo';
+import './navbar-link';
 
 @customElement('navbar-element')
 export class NavbarElement extends LitElement {
@@ -8,7 +9,7 @@ export class NavbarElement extends LitElement {
 
   static styles = css`
     :host {
-      background: white;
+      background: rgba(0,0,0,0.3);
       box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
       color: black;
       display: flex;
@@ -33,9 +34,9 @@ export class NavbarElement extends LitElement {
     return html`
       <navbar-logo name='${this.name}'></navbar-logo>
       <ul class="nav">
-        <li class="nav--item">Home</li>
-        <li class="nav--item">About</li>
-        <li class="nav--item">Contact</li>
+        <navbar-link name="Home"></navbar-link>
+        <navbar-link name="About"></navbar-link>
+        <navbar-link name="Contact"></navbar-link>
       </ul>
     `;
   }

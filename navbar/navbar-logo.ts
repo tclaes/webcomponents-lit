@@ -6,14 +6,13 @@ export class NavbarLogo extends LitElement {
   @property() name;
   @property() logoUrl;
 
-  
-
   static styles = css`
     :host {
       display: block;
     }
 
     .name {
+      color: white;
       font-size: 2rem;
       line-height: 2rem;
       padding: 0;
