@@ -1,7 +1,7 @@
 import { LitElement, customElement, html, css, property } from 'lit-element';
 
-@customElement('hello-world')
-export class HelloElement extends LitElement {
+@customElement('blank')
+export class BlankComponent extends LitElement {
 
   @property() name;
 
