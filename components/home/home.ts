@@ -1,30 +1,26 @@
 import { LitElement, customElement, html, css, property } from 'lit-element';
+import { paragraphStyles } from '../../styles/paragraphs.ts';
 
 @customElement('app-home')
 export class HomeComponent extends LitElement {
 
   @property() name;
 
-  static styles = css`
-    :host {
-      background: rgba(255,255,255,.5);
-      display: block;
-      min-height: 500px;
-      padding: 1rem;
-    }
+  static get styles() {
+    return [
+      paragraphStyles,
+      css`
+      :host {
+        background: rgba(255,255,255,.5);
+        border-radius: 2px;
+        display: block;
+        min-height: 500px;
+        padding: 1rem 2rem;
+      }
+    `
+    ]
+  }
 
-    h1 {
-      color: white;
-      font-size: 2rem;
-      margin: 0 ;
-    }
-
-    p {
-      color: #333;
-      font-size: 1rem;
-      line-height; 1.5rem;
-    }
-  `
 
   render() {
     return html`
