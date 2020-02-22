@@ -30,7 +30,7 @@ export class NavbarLink extends LitElement {
 
   render() {
     return html`
-      <li class="nav--item"><a href="${this.name}">${this.name}</a></li>
+      <li class="nav--item"><a href="#${this.name}">${this.name}</a></li>
     `;
   }
 }
