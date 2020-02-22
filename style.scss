@@ -1,13 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
+  font-family: "Roboto";
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   background: url('https://source.unsplash.com/random') no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  font-family: "Roboto";
-  font-weight: bolder;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto 3fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+navbar-element {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  background: white;
+  box-shadow: 0px -10px 5px 0px rgba(0,0,0,0.5);
+  grid-area: footer;
 }
